@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ViewController: UIViewController {
-
+    // Outlets
+    @IBOutlet weak var bannerView: GADBannerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        bannerView.adUnitID = GOOGLE_ADMOB_ADBLOCK_BANNER
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
