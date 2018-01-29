@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  daily-dose
 //
 //  Created by Иван on 28.01.2018.
@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMobileAds
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
     // Outlets
     @IBOutlet weak var bannerView: GADBannerView!
     

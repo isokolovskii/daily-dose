@@ -10,3 +10,4 @@ import Foundation
 
 let GOOGLE_ADMOB_APP_ID = "ca-app-pub-9796976040694368~4646468435"
 let GOOGLE_ADMOB_ADBLOCK_BANNER = "ca-app-pub-9796976040694368/7895093083"
+var IAP_REMOVE_ADS = "com.isokol.sokolovkii.ivan.daily.dose.remove.ads"

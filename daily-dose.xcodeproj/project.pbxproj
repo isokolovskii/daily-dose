@@ -8,25 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		2C30D0B7201E1337005558C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C30D0B6201E1337005558C5 /* AppDelegate.swift */; };
-		2C30D0B9201E1337005558C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C30D0B8201E1337005558C5 /* ViewController.swift */; };
+		2C30D0B9201E1337005558C5 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C30D0B8201E1337005558C5 /* HomeVC.swift */; };
 		2C30D0BC201E1337005558C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C30D0BA201E1337005558C5 /* Main.storyboard */; };
 		2C30D0BE201E1337005558C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C30D0BD201E1337005558C5 /* Assets.xcassets */; };
 		2C30D0C1201E1337005558C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C30D0BF201E1337005558C5 /* LaunchScreen.storyboard */; };
 		2C30D0CA201E197B005558C5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C30D0C9201E197B005558C5 /* StoreKit.framework */; };
 		2C30D0CD201E1D27005558C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C30D0CC201E1D27005558C5 /* Constants.swift */; };
+		2C31F3BB201EF5FD00A7B7B7 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C31F3BA201EF5FD00A7B7B7 /* PurchaseManager.swift */; };
 		339561F9D69CDDF06EC0F2A4 /* Pods_daily_dose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F5D0C2A8E078AAFCF0829C /* Pods_daily_dose.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C30D0B3201E1337005558C5 /* daily-dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daily-dose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C30D0B6201E1337005558C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C30D0B8201E1337005558C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C30D0B8201E1337005558C5 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2C30D0BB201E1337005558C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C30D0BD201E1337005558C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C30D0C0201E1337005558C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C30D0C2201E1337005558C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C30D0C9201E197B005558C5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2C30D0CC201E1D27005558C5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2C31F3BA201EF5FD00A7B7B7 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		53F5D0C2A8E078AAFCF0829C /* Pods_daily_dose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daily_dose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12B667B86F7935CD79A468C /* Pods-daily-dose.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daily-dose.debug.xcconfig"; path = "Pods/Target Support Files/Pods-daily-dose/Pods-daily-dose.debug.xcconfig"; sourceTree = "<group>"; };
 		F591BBC4077AC9AC55C46270 /* Pods-daily-dose.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daily-dose.release.xcconfig"; path = "Pods/Target Support Files/Pods-daily-dose/Pods-daily-dose.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,9 +68,10 @@
 		2C30D0B5201E1337005558C5 /* daily-dose */ = {
 			isa = PBXGroup;
 			children = (
+				2C31F3B8201EF5E300A7B7B7 /* Services */,
+				2C31F3B7201EF5AC00A7B7B7 /* Controller */,
 				2C30D0CB201E1D16005558C5 /* Utilities */,
 				2C30D0B6201E1337005558C5 /* AppDelegate.swift */,
-				2C30D0B8201E1337005558C5 /* ViewController.swift */,
 				2C30D0BA201E1337005558C5 /* Main.storyboard */,
 				2C30D0BD201E1337005558C5 /* Assets.xcassets */,
 				2C30D0BF201E1337005558C5 /* LaunchScreen.storyboard */,
@@ -92,6 +95,22 @@
 				2C30D0CC201E1D27005558C5 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2C31F3B7201EF5AC00A7B7B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C30D0B8201E1337005558C5 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C31F3B8201EF5E300A7B7B7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C31F3BA201EF5FD00A7B7B7 /* PurchaseManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C3C4B3A3372F181B05849C22 /* Pods */ = {
@@ -231,8 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C30D0B9201E1337005558C5 /* ViewController.swift in Sources */,
+				2C30D0B9201E1337005558C5 /* HomeVC.swift in Sources */,
 				2C30D0B7201E1337005558C5 /* AppDelegate.swift in Sources */,
+				2C31F3BB201EF5FD00A7B7B7 /* PurchaseManager.swift in Sources */,
 				2C30D0CD201E1D27005558C5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
