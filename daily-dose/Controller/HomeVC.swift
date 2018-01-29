@@ -16,7 +16,15 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupAds()
+    }
+    
+    func removeAds() {
+        removeAdsButton.removeFromSuperview()
+        bannerView.removeFromSuperview()
+    }
+    
+    func setupAds() {
         if !UserDefaults.standard.bool(forKey: IAP_REMOVE_ADS) {
             bannerView.adUnitID = GOOGLE_ADMOB_ADBLOCK_BANNER
             bannerView.rootViewController = self
@@ -25,11 +33,6 @@ class HomeVC: UIViewController {
             removeAds()
         }
     }
-    
-    func removeAds() {
-        removeAdsButton.removeFromSuperview()
-        bannerView.removeFromSuperview()
-    }
 
     @IBAction func removeAdsPressed(_ sender: Any) {
         PurchaseManager.instance.purhcaseRemoveAds { (success) in
@@ -37,6 +40,13 @@ class HomeVC: UIViewController {
                 self.removeAds()
             } else {
                 print("Failed")
+            }
+        }
+    }
+    @IBAction func restoreBtnPressed(_ sender: Any) {
+        PurchaseManager.instance.restorePurchases { (success) in
+            if success {
+                self.setupAds()
             }
         }
     }
