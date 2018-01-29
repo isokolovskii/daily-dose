@@ -86,7 +86,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4YX-sI-GZO">
-                                <rect key="frame" x="0.0" y="566" width="375" height="101"/>
+                                <rect key="frame" x="0.0" y="570" width="375" height="97"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NV-mS-8SC" customClass="GADBannerView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -96,11 +96,14 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-Wq-JAt">
-                                        <rect key="frame" x="0.0" y="50" width="375" height="51"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="47"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
                                         <state key="normal" title="REMOVE ADS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="removeAdsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1nr-xf-yBt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
@@ -123,7 +126,6 @@
                             <constraint firstAttribute="trailing" secondItem="cxk-FF-4pK" secondAttribute="trailing" id="ZCH-cH-gio"/>
                             <constraint firstItem="cxk-FF-4pK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gcJ-Mq-5hA"/>
                             <constraint firstItem="8X3-vW-C5w" firstAttribute="top" secondItem="cxk-FF-4pK" secondAttribute="bottom" id="kJ3-yk-2aA"/>
-                            <constraint firstItem="4YX-sI-GZO" firstAttribute="top" secondItem="8X3-vW-C5w" secondAttribute="bottom" id="lHR-2b-wXV"/>
                             <constraint firstAttribute="trailing" secondItem="8X3-vW-C5w" secondAttribute="trailing" id="qOL-LS-26a"/>
                             <constraint firstItem="cxk-FF-4pK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="t2h-et-lfW"/>
                             <constraint firstAttribute="trailing" secondItem="4YX-sI-GZO" secondAttribute="trailing" id="tbU-V3-PnB"/>
@@ -131,6 +133,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="9NV-mS-8SC" id="dtU-F7-kln"/>
+                        <outlet property="removeAdsButton" destination="yLI-Wq-JAt" id="320-bE-0Ky"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
